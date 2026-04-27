@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Too Easy — Streetwear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FFFFFF;
+            color: #0D0D0D;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 80px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid #0D0D0D;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            font-size: 0.85rem;
+            color: #999999;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Main Content */
+        main {
+            padding: 80px 0;
+        }
+
+        /* Product Grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px 30px;
+        }
+
+        /* Product Card */
+        .product {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-image-wrapper {
+            width: 100%;
+            margin-bottom: 16px;
+            overflow: hidden;
+            border: 1px solid #0D0D0D;
+            aspect-ratio: 1;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover .product-image {
+            transform: scale(1.02);
+        }
+
+        .product-name {
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .product-price {
+            font-size: 0.9rem;
+            color: #666666;
+            letter-spacing: 0.5px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            text-align: center;
+            border-top: 1px solid #0D0D0D;
+            font-size: 0.85rem;
+            color: #999999;
+            letter-spacing: 0.5px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 10px;
+            }
+
+            header {
+                padding: 60px 0 30px;
+            }
+
+            main {
+                padding: 60px 0;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .product-image-wrapper {
+                margin-bottom: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+
+            header {
+                padding: 50px 0 25px;
+            }
+
+            main {
+                padding: 50px 0;
+            }
+
+            .products {
+                gap: 35px;
+            }
+
+            .product-image-wrapper {
+                margin-bottom: 10px;
+            }
+
+            .product-name {
+                font-size: 0.9rem;
+            }
+
+            .product-price {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>TOO EASY</h1>
+            <p class="tagline">Minimal Streetwear</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Product Grid -->
+            <div class="products">
+                <!-- Product 1 -->
+                <div class="product">
+                    <div class="product-image-wrapper">
+                        <img src="images/jersey.png" alt="Oversized Jersey" class="product-image">
+                    </div>
+                    <h3 class="product-name">Oversized Jersey</h3>
+                    <p class="product-price">$89</p>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <div class="product-image-wrapper">
+                        <img src="images/puffer-jacket.png" alt="Puffer Jacket" class="product-image">
+                    </div>
+                    <h3 class="product-name">Puffer Jacket</h3>
+                    <p class="product-price">$249</p>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product">
+                    <div class="product-image-wrapper">
+                        <img src="images/track-pants.png" alt="Parachute Track Pants" class="product-image">
+                    </div>
+                    <h3 class="product-name">Parachute Track Pants</h3>
+                    <p class="product-price">$129</p>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product">
+                    <div class="product-image-wrapper">
+                        <img src="images/sunglasses.png" alt="Shield Sunglasses" class="product-image">
+                    </div>
+                    <h3 class="product-name">Shield Sunglasses</h3>
+                    <p class="product-price">$159</p>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product">
+                    <div class="product-image-wrapper">
+                        <img src="images/sneakers.png" alt="Trail Sneakers" class="product-image">
+                    </div>
+                    <h3 class="product-name">Trail Sneakers</h3>
+                    <p class="product-price">$139</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Too Easy</p>
+        </div>
+    </footer>
+</body>
+</html>
